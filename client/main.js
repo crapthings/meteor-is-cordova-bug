@@ -11,7 +11,11 @@ Template.registerHelper('isServer', function () {
 })
 
 Template.button.events({
-  'click #redirect'() {
+  'click #redirectother'() {
     window.location.replace('https://www.github.com')
+  },
+
+  'click #redirectself'() {
+    window.location.reload()
   }
 })
